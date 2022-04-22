@@ -46,8 +46,8 @@ async function quoteFunc(){
       const quoteJS3 = await axios.get(`https://friends-quotes-api.herokuapp.com/quotes/random`);
       console.log(`Successful`);
       console.log(quoteJS3.data);
-      p5.innerText = (`Quote: ${quoteJS3.data.quote}`);
-      p6.innerText = (`Character: ${quoteJS3.data.character}`);
+      p6.innerText = (`Quote: ${quoteJS3.data.quote}`);
+      p5.innerText = (`Character: ${quoteJS3.data.character}`);
     } catch (rejected){
       console.log(`Nope give it another go!`);
       console.log(rejected);
@@ -64,6 +64,8 @@ fourth.append(p7);
 // My little addition :)
 const p8 = document.createElement(`p`);
 fourth.append(p8);
+
+
 async function tvMazeFunc(){
 
   try{
